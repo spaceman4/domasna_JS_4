@@ -97,11 +97,7 @@ console.log(ageAvg);
 
 //13. Find out who is the youngest of all three people.
 
-let 
-
 let young = Math.min(person.age, anotherperson.age, thirdperson.age);
-
-
 
 switch (young) {
   case person.age:
