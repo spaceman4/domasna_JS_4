@@ -40,11 +40,13 @@ let anotherperson = {
 //8. Find out which person is older.
 
 if (person.age > anotherperson.age) {
-  console.log("person is older than anotherperson");
+  console.log(person.firstName + " is older than " + anotherperson.firstName);
 } else if (anotherperson.age > person.age) {
-  console.log("anotherpeson is older than person");
+  console.log(anotherperson.firstName + " is older than " + person.firstName);
 } else {
-  console.log("person and anotherperson have the same age");
+  console.log(
+    person.firstName + " and " + anotherperson.firstName + " have the same age"
+  );
 }
 
 //9. Find out how many years the person1 is older/younger from person2.
