@@ -99,11 +99,7 @@ let young, middle, old;
 
 young = Math.min(person.age, anotherperson.age, thirdperson.age);
 
-console.log("The youngest person is " + young);
-
 old = Math.max(person.age, anotherperson.age, thirdperson.age);
-
-console.log("The oldest person is " + old);
 
 middle =
   person.age +
@@ -112,4 +108,14 @@ middle =
   Math.min(person.age, anotherperson.age, thirdperson.age) -
   Math.max(person.age, anotherperson.age, thirdperson.age);
 
-console.log("The middle person is " + middle);
+switch (young) {
+  case person.age:
+    console.log(person.firstName + " is the youngest person");
+    break;
+  case anotherperson.age:
+    console.log(anotherperson.firstName + " is the youngest person");
+    break;
+  case thirdperson.age:
+    console.log(thirdperson.firstName + " is the youngest person");
+    break;
+}
